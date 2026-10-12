@@ -1,0 +1,73 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>별해당 · 배우자 분위기</title><style>
+:root{--ink:#17202a;--muted:#65717b;--line:#dce2e5;--deep:#233843;--accent:#864d38;--soft:#eef2f0}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(120deg,#eee9dd,#f8f7f4 50%,#eef1f1);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo",system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:44px 20px 70px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--accent)}h1{font-family:Georgia,"Noto Serif KR",serif;letter-spacing:-.06em;font-size:38px;margin:8px 0}.sub{margin:0;color:var(--muted);line-height:1.75}.layout{display:grid;grid-template-columns:310px minmax(0,1fr);gap:18px;margin-top:26px;align-items:start}.panel{background:#ffffffd9;border:1px solid #fff;border-radius:18px;padding:21px;box-shadow:0 14px 35px #25344312}h2{font-size:16px;margin:0 0 15px}label{display:block;font-size:12px;font-weight:750;color:#52606a;margin:15px 0 6px}select{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink);font:inherit}.two{display:grid;grid-template-columns:1fr 1fr;gap:9px}button{width:100%;margin-top:19px;padding:13px;border:0;border-radius:10px;background:var(--deep);color:white;font:700 14px Pretendard,system-ui,sans-serif;cursor:pointer}.note{font-size:12px;line-height:1.7;color:var(--muted);margin:15px 0 0}.result{display:block}.result.show{display:block}.empty{min-height:420px;display:grid;place-items:center;text-align:center;color:var(--muted);line-height:1.8}.tagline{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:17px}.tag{font-size:11px;font-weight:750;background:var(--soft);color:#53616a;padding:5px 9px;border-radius:99px}.diagram{background:#fafbf9;border:1px solid var(--line);border-radius:15px;padding:22px 16px 18px;text-align:center}.diagram-top{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:500px;margin:auto}.stem-box{background:white;border:1px solid var(--line);border-radius:12px;padding:13px 7px}.stem-label{font-size:11px;color:var(--muted);font-weight:750}.hanja{font-family:Georgia,"Noto Serif KR",serif;font-size:40px;line-height:1.3;margin:5px 0;color:var(--deep)}.stem-name{font-size:12px;color:var(--muted)}.branch-connect{width:100%;max-width:500px;height:36px;display:block;margin:0 auto}.branch-box{display:inline-block;background:#f3ede7;border:1px solid #d9c8b9;border-radius:12px;padding:9px 38px}.branch-box .hanja{color:var(--accent);margin:0}.pair-summary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.mini{border-radius:11px;background:#f4f5f3;border:1px solid var(--line);padding:12px;text-align:center}.mini .k{font-size:11px;color:var(--muted);font-weight:750}.mini .v{font-size:17px;font-weight:800;margin-top:5px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:17px;align-items:stretch}.reading{background:white;border:1px solid var(--line);border-radius:15px;padding:20px;display:flex;flex-direction:column;min-width:0;box-shadow:0 7px 22px #2534430a}.reading-head{display:flex;align-items:center;justify-content:space-between;gap:7px;color:var(--muted);font-size:11px;font-weight:750}.badge{border-radius:99px;background:#eef2f0;padding:5px 10px;color:var(--deep);white-space:nowrap}.reading h3{font-size:18px;line-height:1.48;letter-spacing:-.045em;margin:17px 0 9px}.reading .subtitle{font-size:13px;color:#a4473c;font-weight:700;line-height:1.65;margin:0 0 16px}.reading .body{font-size:13px;line-height:1.9;color:#4d5961;margin:0 0 24px}.keyword-area{margin-top:auto;padding-top:13px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px}.keyword{font-size:11px;color:#59666d;background:#f0f2f1;border-radius:7px;padding:6px 8px}.missing{color:#8d6656!important}.footer{margin-top:19px;color:#78838b;font-size:11px;line-height:1.7}.input-guide{margin-top:14px;padding:12px;border-radius:10px;background:#f5f3ee;color:#59656b;font-size:12px;line-height:1.7}.partner-toggle{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:750;margin:22px 0 8px;cursor:pointer}.partner-toggle input{accent-color:var(--deep);width:16px;height:16px}.partner-toggle small{font-size:10px;color:var(--muted);font-weight:500}.compare-inputs{border-top:1px solid var(--line);padding-top:18px;margin-top:12px}.compare-inputs[hidden],.other-result[hidden]{display:none!important}.result-heading{font-size:17px;margin:0 0 15px;color:var(--deep)}.other-result{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}.scope-note{margin-top:22px;background:#f5f3ee;border-radius:11px;padding:16px;color:#59656b;font-size:12px;line-height:1.8}.scope-note strong{color:var(--deep);font-size:13px}.scope-note p{margin:8px 0 0}.reading{height:100%}.result .diagram .hanja{min-height:52px}.result .diagram .stem-name{min-height:18px}.result .reading{min-height:265px}.placeholder-title{color:#839098;font-size:13px;font-weight:700;margin:3px 0 24px}.placeholder-lines{height:130px;background:repeating-linear-gradient(to bottom,transparent 0px,transparent 25px,#e9eeed 26px,transparent 27px);opacity:.55}.layout{align-items:stretch}.layout>.panel{min-height:100%}@media(max-width:760px){main{padding:28px 13px 52px}h1{font-size:31px}.layout{grid-template-columns:1fr}.panel{padding:17px}.empty{min-height:170px}.cards{grid-template-columns:1fr}.reading{min-height:0}.result .reading{min-height:0}.diagram{padding:15px 10px}.hanja{font-size:35px}}
+</style></head><body><main><header><div class="eyebrow">BYEOLHAEDANG · RESEARCH TOOL / ALPHA</div><h1>별해당 배우자 분위기</h1><p class="sub">일지를 통해 가늠하는 배우자와 관계의 분위기.<br>공명과 본질, 두 관점에서 나타날 수 있는 모습을 살펴봅니다.</p></header><div class="layout"><section class="panel"><h2>일주 정보</h2><label for="gender">성별</label><select id="gender"><option value="male">남성</option><option value="female">여성</option></select><div class="two"><div><label for="stem">일간</label><select id="stem"></select></div><div><label for="branch">일지</label><select id="branch"></select></div></div><label class="partner-toggle"><input type="checkbox" id="compareToggle"> 상대방의 명식도 살펴보기 <small>선택</small></label><div id="compareInputs" class="compare-inputs" hidden><h2>상대방 일주 정보</h2><label for="otherGender">상대방 성별</label><select id="otherGender"><option value="female">여성</option><option value="male">남성</option></select><div class="two"><div><label for="otherStem">일간</label><select id="otherStem"></select></div><div><label for="otherBranch">일지</label><select id="otherBranch"></select></div></div><p class="note">상대방의 명식에서 바라본 배우자 분위기를 별도로 표시합니다.</p></div><button id="calculate">배우자 분위기 확인하기</button><div class="input-guide">성별과 일주를 선택하면 남성은 정재, 여성은 정관을 배우자성으로 삼아 공명과 본질을 살펴봅니다. 상대방을 추가하면 두 명식의 관점을 각각 표시합니다.</div><p class="note">60갑자에 해당하는 일주만 선택할 수 있어요. 생년월일시 전체 입력은 필요하지 않습니다.</p></section><section class="panel"><div class="result" id="result"><h2 class="result-heading">① 나의 명식에서 바라본 배우자 분위기</h2><div class="tagline"><span class="tag">일주 기준</span><span class="tag">공명 · 본질</span><span class="tag">십신 · 십이운성</span></div><div class="diagram"><div class="diagram-top"><div class="stem-box"><div class="stem-label">명주의 일간</div><div class="hanja" id="stemHan"></div><div class="stem-name" id="stemName"></div></div><div class="stem-box"><div class="stem-label" id="spouseLabel">배우자성</div><div class="hanja" id="spouseHan"></div><div class="stem-name" id="spouseName"></div></div></div><svg class="branch-connect" viewBox="0 0 500 36" preserveAspectRatio="none" aria-hidden="true"><path d="M125 2 L250 33 L375 2" stroke="#a7b0b2" stroke-width="1.5" fill="none"/></svg><div class="branch-box"><div class="hanja" id="branchHan"></div><div class="stem-name" id="branchName"></div><div class="stem-label">배우자궁</div></div></div><div class="pair-summary"><div class="mini"><div class="k">공명 · 명주 일간 기준</div><div class="v" id="gongPair">관계의 분위기</div></div><div class="mini"><div class="k">본질 · 배우자성 기준</div><div class="v" id="bonPair">배우자의 분위기</div></div></div><div class="cards"><article class="reading" id="gongCard"><div class="placeholder-title">공명 · 관계의 분위기</div><div class="placeholder-lines"></div></article><article class="reading" id="bonCard"><div class="placeholder-title">본질 · 배우자의 분위기</div><div class="placeholder-lines"></div></article></div><div id="otherResult" class="other-result" hidden><h2 class="result-heading">② 상대의 명식에서 바라본 배우자 분위기</h2><div id="otherResultContent"></div></div><div class="scope-note"><strong>배우자 분위기에 관하여</strong><p>이 서비스는 일지를 중심으로 배우자와의 관계 및 배우자의 이미지를 가볍게 살펴보는 도구입니다. 공명은 관계에서 나타날 수 있는 분위기를, 본질은 명식에 투영된 배우자의 이미지를 의미합니다.</p><p>원국의 다른 글자와 격국·조후, 대운·세운의 영향을 반영하지 않습니다. 실제 배우자의 성격이나 관계의 길흉을 확정하거나 두 사람의 궁합을 판단하는 해석은 아닙니다.</p></div></div></section></div></main><script>
+// Cloudflare Worker 조회 주소. 배포 후 workers.dev 주소를 그대로 사용합니다.
+const API_URL='https://byeolhaedang-partner-api.gongri-asia.workers.dev/calculate';
+const stems=['갑','을','병','정','무','기','경','신','임','계'],stemHan=['甲','乙','丙','丁','戊','己','庚','辛','壬','癸'];
+const branches=['자','축','인','묘','진','사','오','미','신','유','술','해'],branchHan=['子','丑','寅','卯','辰','巳','午','未','申','酉','戌','亥'];
+const elements=['목','목','화','화','토','토','금','금','수','수'];
+const $=id=>document.getElementById(id);
+function option(select,value,label){const o=document.createElement('option');o.value=value;o.textContent=label;select.appendChild(o)}
+function refreshBranches(genderId,stemId,branchId){
+ const stem=$(stemId).value,old=$(branchId).value;
+ const parity=stems.indexOf(stem)%2;
+ const valid=branches.filter((_,i)=>i%2===parity);
+ $(branchId).replaceChildren();valid.forEach(b=>option($(branchId),b,branchHan[branches.indexOf(b)]+' · '+b));
+ if(valid.includes(old))$(branchId).value=old;
+}
+function el(tag,cls,value){const x=document.createElement(tag);if(cls)x.className=cls;if(value!==undefined)x.textContent=value;return x}
+function fillCard(node,kind,pair,data){
+ node.replaceChildren();const [god,stage]=pair.split('|');
+ const head=el('div','reading-head');head.append(el('span','',god+' · '+stage),el('span','badge',kind));node.append(head);
+ if(!data){node.append(el('h3','','해석 문안 확인 중'),el('p','body missing','이 조합의 해석 문안을 확인할 수 없습니다.'));return}
+ node.append(el('h3','',data.title),el('p','subtitle',data.subtitle),el('p','body',data.body));
+ const area=el('div','keyword-area');(data.keywords||[]).forEach(k=>area.append(el('span','keyword','#'+k.replace(/\s+/g,''))));node.append(area);
+}
+function renderMain(c){
+ const si=stems.indexOf(c.stem),pi=stems.indexOf(c.spouse),bi=branches.indexOf(c.branch);
+ $('stemHan').textContent=stemHan[si];$('stemName').textContent=c.stem+' · '+elements[si];
+ $('spouseLabel').textContent='배우자성 · '+(c.gender==='male'?'정재':'정관');
+ $('spouseHan').textContent=stemHan[pi];$('spouseName').textContent=c.spouse+' · '+elements[pi];
+ $('branchHan').textContent=branchHan[bi];$('branchName').textContent=c.branch+' · 일지';
+ $('gongPair').textContent=c.gong.replace('|',' · ');$('bonPair').textContent=c.bon.replace('|',' · ');
+ fillCard($('gongCard'),'공명',c.gong,c.gongText);fillCard($('bonCard'),'본질',c.bon,c.bonText);
+ $('result').classList.add('show');
+}
+function renderOther(c){
+ const root=$('otherResultContent');root.replaceChildren();
+ const original=document.querySelector('#result .diagram').cloneNode(true);
+ for(const item of original.querySelectorAll('[id]'))item.removeAttribute('id');
+ const si=stems.indexOf(c.stem),pi=stems.indexOf(c.spouse),bi=branches.indexOf(c.branch);
+ const h=original.querySelectorAll('.hanja'),names=original.querySelectorAll('.stem-name');
+ h[0].textContent=stemHan[si];h[1].textContent=stemHan[pi];h[2].textContent=branchHan[bi];
+ names[0].textContent=c.stem+' · '+elements[si];names[1].textContent=c.spouse+' · '+elements[pi];names[2].textContent=c.branch+' · 일지';
+ original.querySelectorAll('.stem-label')[1].textContent='배우자성 · '+(c.gender==='male'?'정재':'정관');root.append(original);
+ const summary=el('div','pair-summary');for(const [label,pair] of [['공명 · 명주 일간 기준',c.gong],['본질 · 배우자성 기준',c.bon]]){
+ const mini=el('div','mini');mini.append(el('div','k',label),el('div','v',pair.replace('|',' · ')));summary.append(mini)}root.append(summary);
+ const cards=el('div','cards');const gong=el('article','reading'),bon=el('article','reading');cards.append(gong,bon);root.append(cards);
+ fillCard(gong,'공명',c.gong,c.gongText);fillCard(bon,'본질',c.bon,c.bonText);$('otherResult').hidden=false;
+}
+stems.forEach((s,i)=>{option($('stem'),s,stemHan[i]+' · '+s);option($('otherStem'),s,stemHan[i]+' · '+s)});
+$('gender').addEventListener('change',()=>refreshBranches('gender','stem','branch'));
+$('stem').addEventListener('change',()=>refreshBranches('gender','stem','branch'));
+$('otherGender').addEventListener('change',()=>refreshBranches('otherGender','otherStem','otherBranch'));
+$('otherStem').addEventListener('change',()=>refreshBranches('otherGender','otherStem','otherBranch'));
+$('compareToggle').addEventListener('change',()=>{$('compareInputs').hidden=!$('compareToggle').checked;if(!$('compareToggle').checked)$('otherResult').hidden=true});
+$('stem').value='임';refreshBranches('gender','stem','branch');$('branch').value='진';
+$('otherStem').value='정';refreshBranches('otherGender','otherStem','otherBranch');$('otherBranch').value='유';
+$('calculate').addEventListener('click',async()=>{
+ const button=$('calculate');if(button.disabled)return;
+ const choices=[{gender:$('gender').value,stem:$('stem').value,branch:$('branch').value}];
+ if($('compareToggle').checked)choices.push({gender:$('otherGender').value,stem:$('otherStem').value,branch:$('otherBranch').value});
+ button.disabled=true;button.textContent='조회 중...';
+ try{
+   const response=await fetch(API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({choices})});
+   const data=await response.json();if(!response.ok)throw new Error(data.error||'조회에 실패했습니다.');
+   if(!Array.isArray(data.results)||data.results.length!==choices.length)throw new Error('응답 형식이 올바르지 않습니다.');
+   renderMain(data.results[0]);if(choices.length===2)renderOther(data.results[1]);else $('otherResult').hidden=true;
+ }catch(error){alert('배우자 분위기를 불러오지 못했습니다.\n'+error.message)}
+ finally{button.disabled=false;button.textContent='배우자 분위기 확인하기'}
+});
+
+</script></body></html>
