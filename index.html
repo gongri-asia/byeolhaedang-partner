@@ -117,12 +117,15 @@ $('calculate').addEventListener('click',async()=>{
  const button=$('calculate');if(button.disabled)return;
  const choices=[{gender:$('gender').value,stem:$('stem').value,branch:$('branch').value}];
  if($('compareToggle').checked)choices.push({gender:$('otherGender').value,stem:$('otherStem').value,branch:$('otherBranch').value});
+ lastSuccessfulChoices=null; $('shareResult').disabled=true;
  button.disabled=true;button.textContent='조회 중...';
  try{
    const response=await fetch(API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({choices})});
    const data=await response.json();if(!response.ok)throw new Error(data.error||'조회에 실패했습니다.');
    if(!Array.isArray(data.results)||data.results.length!==choices.length)throw new Error('응답 형식이 올바르지 않습니다.');
    renderMain(data.results[0]);if(choices.length===2)renderOther(data.results[1]);else $('otherResult').hidden=true;
+   lastSuccessfulChoices=choices.map(c=>({...c}));
+   $('shareResult').disabled=false;
  }catch(error){alert('배우자 분위기를 불러오지 못했습니다.\n'+error.message)}
  finally{button.disabled=false;button.textContent='배우자 분위기 확인하기'}
 });
